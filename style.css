@@ -1,0 +1,33 @@
+nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+}
+
+.navbar-nav li:last-child .navbar-brand {
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav {
+        width: 200px;
+        margin: 0;
+    }
+
+    .bg-light {
+        background: none!important;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        text-transform: capitalize;
+    }
+}
