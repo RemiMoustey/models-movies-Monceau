@@ -1,6 +1,20 @@
-nav {
-    width: 50%;
-    margin: 0 auto;
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.navbar-light .navbar-brand {
+    color: #f4877c;
+}
+
+h1 {
+    margin-top: 32px;
+}
+
+h1, h2 {
+    color: #f36e60;
+    margin-bottom: 32px;
 }
 
 .navbar-brand {
@@ -11,7 +25,43 @@ nav {
     margin: 0;
 }
 
+.banner {
+    margin-top: 124px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+figure {
+    border: solid 1px #000;
+}
+
+.frame {
+    width: 400px;
+    padding: 5px 10px;
+    margin: 20px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    background-color: #fdc9b8;
+}
+
+footer {
+    border-top: 2px solid #f699af;
+    margin-top: 32px;
+    padding: 20px 0;
+}
+
+footer h2 {
+    color: #666;
+}
+
+.frame p {
+    text-align: justify;
+}
+
 @media (max-width: 991px) {
+
     header {
         display: flex;
         justify-content: space-around;
@@ -22,6 +72,14 @@ nav {
         margin: 0;
     }
 
+    .navbar {
+        position: static;
+    }
+
+    .banner {
+        margin-top: 0px;
+    }
+
     .bg-light {
         background: none!important;
     }
@@ -29,5 +87,28 @@ nav {
     .navbar-brand {
         margin: 0;
         text-transform: capitalize;
+    }
+
+    figure {
+        width: 272px;
+        margin: 20px auto;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #illustration {
+        width: 100%;
+        height: auto;
+    }
+    
+    .frame {
+        width: 300px;
     }
 }
