@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style.css" /> 
+        <title>Inscription Joker</title>
+    </head>
+    <body>
+        <header class="text-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="mb-2">
+                    <a href="../index.html"><img src="../img/logo.png" alt="Logo Les films en plein air" /></a>
+                </div>
+                <div class="mx-auto">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="../index.html" class="navbar-brand">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../actualities.html" class="navbar-brand">Actualités</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../movies.html" class="navbar-brand">Films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../mentions.html" class="navbar-brand">Mentions légales</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="banner-nohome text-center">
+            <img src="../img/banner.jpg" alt="Film en plein air" />
+        </div>
+
+        <div class="container">
+            <h1 class="text-center">Inscription</h1>
+            <p class="text-center">
+                Date et heure : 06/08/2020 à 21h00<br />
+                Film : <span class="italic">Joker</span><br />
+                Lieu : parc Monceau<br />
+            </p>
+            <form id="inscription-form" method="post" action="#">
+                <div class="form-group">
+                    <label for="name">Nom</label><br />
+                    <input type="text"class="form-control" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="firstname">Prénom</label><br />
+                    <input type="text" class="form-control" id="firstname" name="firstname" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="places">Nombre de places</label><br />
+                    <input type="number" class="form-control" id="places" name="places" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="mentions">
+                        <input type="checkbox" name="mentions" id="mentions" required/> Je consens à ce que mes données soumises soient recueillies et stockées comme décrit dans les Mentions légales
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">S'inscrire</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="d-lg-flex justify-content-center">
+                <div class="frame">
+                    <h2 class="text-center">Nos coordonnées</h2>
+                    <p>Email : <a href="mailto:lesfilmsenpleinair@gmail.com">lesfilmsenpleinair@gmail.com</a></p>
+                    <p>Adresse : 7 Cité Paradis, 75010 Paris</p>
+                    <p>Téléphone : 01 02 03 04 05</p>
+                </div>
+                <div class="frame">
+                    <h2 class="text-center">À propos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper dignissim elit sed venenatis. Integer euismod lacus at enim feugiat lobortis. Suspendisse id quam ac magna molestie laoreet. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

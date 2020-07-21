@@ -12,7 +12,7 @@ h1 {
     margin-top: 32px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #f36e60;
     margin-bottom: 32px;
 }
@@ -25,7 +25,7 @@ h1, h2 {
     margin: 0;
 }
 
-.banner {
+.banner, .mentions {
     margin-top: 124px;
 }
 
@@ -33,7 +33,28 @@ h1, h2 {
     width: 100%;
 }
 
+.movie {
+    margin-bottom: 30px;
+}
 
+.movie h2 {
+    margin-bottom: 0;
+}
+
+.date {
+    text-align: center;
+    font-size: 25px;
+    color: #f36e60;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#inscription-form {
+    width: 50%;
+    margin: 0 auto;
+}
 
 figure {
     border: solid 1px #000;
@@ -78,8 +99,8 @@ footer h2 {
         position: static;
     }
 
-    .banner {
-        margin-top: 0px;
+    .banner, .mentions {
+        margin-top: 0;
     }
 
     .banner, .banner-nohome {
@@ -105,6 +126,10 @@ footer h2 {
         margin: 20px auto;
     }
 
+    .mentions h1, .mentions h2, .mentions h3 {
+        text-align: center;
+    }
+
     footer div {
         display: flex;
         flex-direction: column;
@@ -117,6 +142,10 @@ footer h2 {
     #illustration {
         width: 100%;
         height: auto;
+    }
+
+    #inscription-form {
+        width: initial;
     }
     
     .frame {
