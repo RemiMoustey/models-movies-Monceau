@@ -51,6 +51,20 @@ h1, h2, h3 {
     font-style: italic;
 }
 
+.movie-odd img {
+    float: left;
+    margin-right: 10px;
+}
+
+.movie-even img {
+    float: right;
+    margin-left: 10px;
+}
+
+.movie h2 {
+    clear: both;
+}
+
 #inscription-form {
     width: 50%;
     margin: 0 auto;
@@ -73,6 +87,7 @@ footer {
     border-top: 2px solid #f699af;
     margin-top: 32px;
     padding: 20px 0;
+    clear: both;
 }
 
 footer h2 {
@@ -124,6 +139,12 @@ footer h2 {
     figure {
         width: 272px;
         margin: 20px auto;
+    }
+
+    .movie-odd img, .movie-even img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
     }
 
     .mentions h1, .mentions h2, .mentions h3 {
